@@ -186,21 +186,17 @@ client.on("message", async message => {
 		console.log("before switch");
 		switch(args.length) {
 			case 0:
-				console.log("0");
 				sayMessage += (1 + Math.floor(Math.random() * 6));
 				break;
 			case 1:
-				console.log(1);
 				sayMessage += (1 + Math.floor(Math.random() * args[0]));
 				break;
 			case 2:
-				console.log(2);
 				var rollNum = (Math.max(args[0], args[1]) - Math.min(args[0], args[1]));
 				
 				sayMessage += (Math.min(args[0], args[1]) + Math.floor(Math.random() * rollNum));
 				break;
 			default:
-				console.log("default");
 				message.channel.send("Default - HEY!! only enter integer numbers between 1 and 9000000000000000 lol.");		
 			}
 			//send the message.
@@ -369,7 +365,7 @@ Winner is option 4!*/
   
   //play a song from youtube.
   if(command === "play"){
-		//check if user has permission.
+=		//check if user has permission.
 		//if(!message.member.roles.some(r=>["Administrator", "Moderator"].includes(r.name)) )
 		//return message.reply("Sorry, you don't have permissions to use this!");
 		
@@ -447,7 +443,6 @@ client.on("disconnect", async message => {
 //plays the 
 function play(connection, message){
 	var server = serverList[message.guild.id];
-
 	server.dispatcher = connection.playStream(YTDL(server.queue[0], {filter: "audioonly"}));
 	server.queue.shift();
 	server.dispatcher.on("end", function(){
