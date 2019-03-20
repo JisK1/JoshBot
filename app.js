@@ -365,7 +365,7 @@ Winner is option 4!*/
   
   //play a song from youtube.
   if(command === "play"){
-=		//check if user has permission.
+		//check if user has permission.
 		//if(!message.member.roles.some(r=>["Administrator", "Moderator"].includes(r.name)) )
 		//return message.reply("Sorry, you don't have permissions to use this!");
 		
