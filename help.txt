@@ -1,0 +1,19 @@
+Welcome to Josh BOT to enter a command type / and then the name of the command.
+Here is a list of commands that have been implemented so far.
+
+ping - Gets the ping from the server to the client.
+play <youtuber url> - Plays the youtube video from the url entered.
+skip - skips the current youtube video if one is playing.
+stop - Stops all music and has teh bot leave the server.
+say <text> - Have the BOT say somthing.
+roll <number> - If no number is input then a random number is generated between 0 and 6
+If a number is input it generates a random number between 0 and the number.
+kick <user> - Administrators and Moderators only. Kicks the user from the server.
+ban <user> - Administrators and Moderators only. bans the user from the server.
+compliment <user> - gives the spcified user a nice compliment.
+8ball - gives an answer to any question.
+startpoll <pollname choice1 choice2 choice3 ....> - starts a poll that can be voted on by users.
+vote <number> - votes on the current poll.
+endpoll - ends the current poll and shows the results.
+exit - Administrators and Moderators only. Takes the bot offline.
+
