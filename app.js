@@ -183,7 +183,6 @@ client.on("message", async message => {
 		}
 		
 		var sayMessage = " ";
-		console.log("before switch");
 		switch(args.length) {
 			case 0:
 				sayMessage += (1 + Math.floor(Math.random() * 6));
